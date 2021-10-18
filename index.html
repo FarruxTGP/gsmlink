@@ -1,580 +1,1192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSM</title>
-    <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="./assets/font.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Gsm a Link</title>
 </head>
+
 <body>
-   
-    <div class="wrapper">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">
-                <img src="./assets/img/logo.svg" alt="">
-            </a>
-            </div>
+  <section id="order_wrapper">
+    <form id="order" class="modalka">
+      <h1>Перезвоним</h1>
+      <p>в течении 2 минут!</p>
+      <div class="map__form">
+        <input type="text" name="" placeholder="Ваше имя">
+        <input type="text" name="" placeholder="Ваш телефон" required>
+        <input type="submit" name="" class="polezn__btn" value="Заказать звонок">
+      </div>
+      <p>Нажимая кнопку "Заказать звонок" <br> вы соглашаетесь с <span class="green"> политикой
+          конфиденциальностью</span></p>
+    </form>
+  </section>
+  <header class="header" id="header">
+    <nav class="nav ">
+      <a href="#" class="nav__logo"><img src="./assets/img/logo-head.png" alt=""></a>
 
-            <ul class="menu">
-            
-                <li>
-                    <a href="#">Оборудование и цены</a>
-                </li>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Оборудование и цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Смотреть работы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#comments" class="nav__link">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="tel:+7 (495) 085-37-81">+7 (495) 085-37-81</a>
+          </li>
+        </ul>
+      </div>
 
-                <li>
-                    <a href="#">Смотреть работы </a>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                </li>
-                <li>
-                    <a href="#">Отзывы</a>
-                </li>
-                 <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'><img src="assets/img/4443073.png" width="27" alt=""></i>
+      </div>
 
-            <div class="right_nav">
-                <a class="phone" href="tel:+7 (495) 085-37-81">+7 (495) 085-37-81</a>
-                <a href="#" class="btn outline">Заказать звонок</a>
-            </div>
+      <a href="#" class="button button__header btn_nav" id="mySizeChart">Заказать звонок</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home section" id="home" data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="home__container container grid">
 
 
+        <div class="home__data">
+          <h1 class="home__title"> Усиление сигнала сотовой связи и интернета </h1>
+          <p class="home__description">На производстве, в жилых и коммерческих помещениях любой площад</p>
 
+          <div class="btn_wrap_header">
+            <a href="#" class="button btn_nav" id="mySizeChart2">Заказать консультацию</a>
+            <a href="#" class="button btn_black showmodal">Рассчитать стоимость</a>
+          </div>
+          <p class="sm_info">Сделаем<span> под ключ за 1 день</span> или поможем подобрать оборудование<span> для
+              самостаятелной установки</span></p>
 
-        </nav> 
-    
-        <div class="container">
-           <section class="section_1">
-            <div class="header">
-                <div class="left_header">
-                    <h1 class="big_title">
-                        Усиление сигнала  сотовой связи и интернета  
-                    </h1>
-                    <h4 class="md_info">
-                        На производстве, в жилых и коммерческих помещениях любой площад
-                    </h4>
-    
-                    <div class="header_btn_group">
-                        <a href="#" class="btn lime">Заказать консультацию</a>
-                        <a href="#" class="btn black">Рассчитать стоимость</a>
-                    </div>
-    
-                    <p class="sm_info">Сделаем<span> под ключ за 1 день</span> или поможем подобрать оборудование для самостаятелной установки</p>
-                </div>
-    
-                <div class="right_header">
-                    <img class="man_img" src="./assets/img/mans.svg" alt="">
-                </div>
-               </div>
-           </section>
-
-           <section class="section_2">
-               <div class="title_1">Усиление связи в офисе</div>
-
-             <div class="some_text">
-                <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga, accusamus aliquid vitae, perspiciatis quisquam dolor vel eum, nulla similique qui cumque nesciunt natus. Temporibus, aliquam perferendis! Suscipit nobis obcaecati architecto nam, eos repellendus, error unde fuga adipisci mollitia ut?
-                   </p>
-                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa numquam dolore omnis reiciendis consectetur corrupti, veniam non nemo quis reprehenderit sapiente illum quasi ratione sit rem! Laudantium omnis sunt explicabo cum magni ipsam ipsa voluptatem enim, quas necessitatibus nobis iste.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa numquam dolore omnis reiciendis consectetur corrupti, veniam non nemo quis reprehenderit sapiente illum quasi ratione sit rem! Laudantium omnis sunt explicabo cum magni ipsam ipsa voluptatem enim, quas necessitatibus nobis iste.</p>
-             </div>
-           </section>
         </div>
 
-        <div class="full_container">
-          <div class="wrap_long">
-            <div class="phone_img">
-                <img src="./assets/img/phone.png" alt="">
-            </div>
-          
-            <div class="right_info">
-                <div class="txt_right">
-                    <h1 class="right_title">
-                        В чем вред слабого сигнала сотовой  связи? 
-                    </h1>
-                    <ul class="right_menu">
-                        <li>Клиенты вечно не могут дозвониться до вас, а вы — до клиентов </li>
-                        <li>Клиенты вечно не могут дозвониться до вас, а вы — до клиентов </li>
-                        <li>Клиенты вечно не могут дозвониться до вас, а вы — до клиентов </li>
-                        <li>Клиенты вечно не могут дозвониться до вас, а вы — до клиентов </li>
-                    </ul>
-    
-                    <div class="quote">
-                      <p>* Из-за плохого сигнала вы теряете время,   нервы и деньги</p>
-                    </div>
-                </div>
-               
-            </div>
-          </div>
+        <img class="svg__img svg__color home__img" src="./assets/img/mans.svg" alt="">
+      </div>
+    </section>
+
+    <section class="about section container" id="about" data-aos="fade-up" data-aos-duration="1000">
+      <div class="about__container ">
+        <div class="title_1">Усиление связи в офисе</div>
+
+        <div class="some_text">
+          <p>
+            Для любого офиса важна качественная сотовая связь и бесперебойный доступ в мобильный интернет 24/7. При не
+            устойчивом GSM-сигнале вы рискуете пропустить важный звонок, не можете полноценно вести переговоры с
+            клиентами, заключать сделки по телефону, проводить голосовые и видеоконфиренции.
+          </p>
+          <p>Эту проблему решит система усиления сотового сигнала. Она включает в себя репитер,комплект из внешних и
+            внутренних антенн, радиочастотный кабель и разъём. Внешная антенна направляется на ближайшую базовую
+            станцию, принимает сигнал связи. Репитер усиливает его, а внутренние антенны распространяют на мобильные
+            свойства.</p>
+          <p>Если вы хотите обеспечить стабильную связь без обрывов, помех и шумов, обратитесь в нашу компанию.
+            Специалисты GSM-LINK изучат ваш объект, оценят уровень сигнала от ближайшей вышки, планировку и площадь
+            помещения. Исходя из полученных данных мы подберем и установим индивидуальную систему усиления сотовой связи
+            в офисе. </p>
         </div>
 
-        <section class="section_3">
-             <div class="container">
-                 <h1 class="title_3">Как решить проблему?</h1>
-                 <h4 class="title_sm_3">Установите систему <span>усиления сигнала!</span></h4>
-                 <img src="./assets/img/level.svg" alt="">
+      </div>
+    </section>
 
-                <div class="info_solve">
-                    <div class="problem_info_wrap">
-                        <div class="problem_info">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod enim, deleniti corporis id amet accusantium nostrum eligendi possimus minima.</h3>
-                        </div>
-                        <div class="problem_info">
-                           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod enim, deleniti corporis id amet accusantium nostrum eligendi possimus minima.</h3>
-                       </div>
-                    </div>
-   
-                    <div class="quote2">
-                        <h4>*Связь становится лучше, гаджеты работают в комфортном режиме, режиме,режиме,режиме, </h4>
-                    </div>
-                </div>
-
-             </div>
-        </section>
-
-        <div class="full_container">
-            <div class="wrap_long">
-            
-            
-              <div class="right_info">
-                  <div class="txt_right">
-                      <h1 class="right_title">
-                        А если возникнут сложности?  
-                      </h1>
-                      <ul class="right_menu">
-                          <li>Предоставим проектную документацию, поможем согласовать с управ </li>
-                          <li>Предоставим проектную документацию, поможем согласовать с управ </li>
-                          <li>Предоставим проектную документацию, поможем согласовать с управ </li>
-                          <li>Предоставим проектную документацию, поможем согласовать с управ </li>
-                      </ul>
-      
-                      <div class="quote">
-                        <p>**Все договоренности и условия пропишем в договоре   и дадим гар</p>
-                      </div>
-                  </div>
-                 
-              </div>
-
-              <div class="phone_img2">
-                <img src="./assets/img/securty.svg" alt="">
-            </div>
-            </div>
+    <section data-aos="fade-up" data-aos-duration="1000">
+      <div class="full_container" id="services">
+        <div class="wrap_long" style="position: relative;">
+          <div class="phone_img">
+            <img src="./assets/img/phone.png" alt="">
+            <img src="assets/font/e.png" style="    position: absolute;
+                          width: 143px;
+                          height: 143px;
+                          top: 40%;
+                          left: 46%;" alt="">
           </div>
 
-
-          <section class="section_4">
-
-            <h1 class="title_4">Узнайте стоимость работ и оборудования прямо сейчас </h1>
-            <h4 class="title_sm_4">Выберите нужные варианты и <span>получите предварительную смету</span></h4>
-
-            <div class="select_wrapper">
-                <div class="select_self">
-                    <h4> Тип объекта</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Площадь, м²</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Расстояние от МКАД</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Место установки антены</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Что нужно усилить</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4>Выберите оператора</h4>
-                    <form>
-                      <div class="select-pop">
-                        <select class="select">
-                          <option value="value1">Fruits</option>
-                          <option value="value1">Mango</option>
-                          <option value="value2">Banana</option>
-                          <option value="value3">Cherries</option>
-                        </select>
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Выше имя</h4>
-                    <form>
-                      <div class="select-pop">
-                        <input type="text" class="select" placeholder="kocfnin">
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <h4> Номер телефона</h4>
-                    <form>
-                      <div class="select-pop">
-                       <input type="text" class="select" placeholder="kocfnin">
-                      </div>
-                    </form>
-                </div>
-                <div class="select_self">
-                    <form>
-                      <div class="select-pop">
-                        <input type="button" value=" Расчитать стоимость" class="select_btn btn black">
-                      </div>
-                    </form>
-                </div>
-            </div>
-
-            
-          </section>
-
-
-          <div class="full_container">
-              <div class="container">
-                 <h1 class="title_5">Вам удобно и выгодно сотрудничать с нами</h1>
-
-                 <div class="our_features">
-                     <div class="feature_item">
-                         <div class="icon_item">
-                             <img src="./assets/icons/1.svg" alt="">
-                         </div>
-                         <div class="our_text_right">
-                             <h3 class="main_tit_txt">
-                                 1 Год
-                             </h3>
-                             <p class="main_last_tit">гарантия на работы и обсуживание</p>
-                         </div>
-                     </div>
-                     <div class="feature_item">
-                        <div class="icon_item ">
-                            <img src="./assets/icons/3.svg" alt="">
-                        </div>
-                        <div class="our_text_right">
-                            <h3 class="main_tit_txt">
-                                Постоплата
-                            </h3>
-                            <p class="main_last_tit">возможность оплаты
-                                после проверки</p>
-                        </div>
-                    </div>
-                    <div class="feature_item">
-                        <div class="icon_item sm_img">
-                            <img src="./assets/icons/5.svg" alt="">
-                        </div>
-                        <div class="our_text_right">
-                            <h3 class="main_tit_txt">
-                                Качество
-                            </h3>
-                            <p class="main_last_tit">российский
-                                производителей</p>
-                        </div>
-                    </div>
-                    <div class="feature_item">
-                        <div class="icon_item">
-                            <img src="./assets/icons/4.svg" alt="">
-                        </div>
-                        <div class="our_text_right">
-                            <h3 class="main_tit_txt">
-                                Рассрочка
-                            </h3>
-                            <p class="main_last_tit">без банков
-                                и без процентов</p>
-                        </div>
-                    </div>
-                    <div class="feature_item">
-                        <div class="icon_item">
-                            <img src="./assets/icons/2.svg" alt="">
-                        </div>
-                        <div class="our_text_right">
-                            <h3 class="main_tit_txt">
-                                Вознаграждение
-                            </h3>
-                            <p class="main_last_tit">Партнерам
-                                за рекомендацию</p>
-                        </div>
-                    </div>
-                    <div class="feature_item">
-                       <div class="quote">
-                        *
-                        Вы получите качественное
-                        оборудование от российских
-                        производителей, в котором
-                        можете быть уверены на все 100%
-                       </div>
-                    </div>
-                 </div>
-
-
-                 
-              </div>
-              
-          </div>
-
-
-          <div class="container">
-              <h1 class="title_6">
-                Как мы решаем задачи клиентов
+          <div class="right_info">
+            <div class="txt_right">
+              <h1 class="right_title">
+                В чем вред слабого сигнала сотовой связи?
               </h1>
-              <h5 class="title_sm_6">Выбирайте, примеры каких <span>объектов вам хочется посмотреть</span></h5>
-
-              <div class="tab_group">
-                 <h4 class="tab act">
-                    Все объекты
-                 </h4>
-                 <h4 class="tab">
-                    Коммерческие объекты
-                 </h4>
-                 <h4 class="tab">
-                    Жилые объекты
-                 </h4>
-              </div>
-
-
-              <div class="slider_my">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-
-                 
-
-                        <div class="slider">
-                        
-                                  
-                            <div class="slides">
-                                <div id="slide-1">
-                                  <img src="./assets/img/slider.png" alt="">
-                                </div>
-                                <div id="slide-2">
-                                  <img src="./assets/img/slider.png" alt="">
-                                </div>
-                                <div id="slide-3">
-                                  <img src="./assets/img/slider.png" alt="">
-                                </div>
-                                <div id="slide-4">
-                                  <img src="./assets/img/slider.png" alt="">
-                                </div>
-                                <div id="slide-5">
-                                  <img src="./assets/img/slider.png" alt="">
-                                </div>
-                              </div>
-  
-                              <div class="goto_wrap">
-                                  <a class="goto" href="#slide-1">
-                                      <img src="./assets/img/slider.png" alt="">
-                                  </a>
-                                  <a class="goto" href="#slide-2">
-                                      <img src="./assets/img/slider.png" alt="">
-                                  </a>
-                                  <a class="goto" href="#slide-3">
-                                      <img src="./assets/img/slider.png" alt="">
-                                  </a>
-                                  <a class="goto" href="#slide-4">
-                                      <img src="./assets/img/slider.png" alt="">
-                                  </a>
-                                  <a class="goto" href="#slide-5">
-                                      <img src="./assets/img/slider.png" alt="">
-                                  </a>
-                              </div>
-                            </div>
-
-                          <div class="right_part">
-                          
-                            <ul class="right_list">
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                            </ul>
-
-
-                            <div class="text_some_slider">
-                                <h3>Zadaniya</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore obcaecati reprehenderit voluptates reiciendis aperiam cupiditate, ducimus fuga, et repudiandae rem ipsum quisquam velit excepturi maiores quas, odio voluptatum atque tempore.</p>
-                            </div>
-
-                            <div class="text_some_slider">
-                                <h3>Zadaniya</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore obcaecati reprehenderit voluptates reiciendis aperiam cupiditate, ducimus fuga, et repudiandae rem ipsum quisquam velit excepturi maiores quas, odio voluptatum atque tempore.</p>
-                            </div>
-
-                        </div>
-
-                      </div>
-
-
-
-                      <div class="swiper-slide">
-                        <div class="slider">
-                          
-                            <div class="slides">
-                              <div id="slide-6">
-                                <img src="./assets/img/slider.png" alt="">
-                              </div>
-                              <div id="slide-7">
-                                <img src="./assets/img/slider.png" alt="">
-                              </div>
-                              <div id="slide-8">
-                                <img src="./assets/img/slider.png" alt="">
-                              </div>
-                              <div id="slide-9">
-                                <img src="./assets/img/slider.png" alt="">
-                              </div>
-                              <div id="slide-10">
-                                <img src="./assets/img/slider.png" alt="">
-                              </div>
-                            </div>
-
-                            <div class="goto_wrap">
-                                <a class="goto" href="#slide-6">
-                                    <img src="./assets/img/slider.png" alt="">
-                                </a>
-                                <a class="goto" href="#slide-7">
-                                    <img src="./assets/img/slider.png" alt="">
-                                </a>
-                                <a class="goto" href="#slide-8">
-                                    <img src="./assets/img/slider.png" alt="">
-                                </a>
-                                <a class="goto" href="#slide-9">
-                                    <img src="./assets/img/slider.png" alt="">
-                                </a>
-                                <a class="goto" href="#slide-10">
-                                    <img src="./assets/img/slider.png" alt="">
-                                </a>
-                            </div>
-                            
-                          </div>
-
-                          <div class="right_part">
-                            <ul class="right_list">
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                                <li><img src="./assets/icons/9.svg" alt=""> Щелково</li>
-                            </ul>
-
-
-                            <div class="text_some_slider">
-                                <h3>Zadaniya</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore obcaecati reprehenderit voluptates reiciendis aperiam cupiditate, ducimus fuga, et repudiandae rem ipsum quisquam velit excepturi maiores quas, odio voluptatum atque tempore.</p>
-                            </div>
-
-                            <div class="text_some_slider">
-                                <h3>Zadaniya</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore obcaecati reprehenderit voluptates reiciendis aperiam cupiditate, ducimus fuga, et repudiandae rem ipsum quisquam velit excepturi maiores quas, odio voluptatum atque tempore.</p>
-                            </div>
-                          </div>
-                      </div>
-                      <!-- <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div> -->
-                  
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-                  <h3 class="center_list">Show all list <span class="symbol"> &#187;</span></h3>
-              </div>
+              <ul class="right_menu">
+                <li>Клиенты вечно не могут дозвониться до вас, а вы — до клиентов </li>
+                <li>Сотрудники тратят много времени на соглосование рабочих вопросов </li>
+                <li>У покупателей не получается воспользоваться акцией или оплатить покупки на кассе </li>
+                <div class="quote">
+                  <p>* Из-за плохого сигнала вы теряете время, нервы и деньги</p>
+                </div>
+            </div>
 
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="full_container">
-              <h1 class="title_7">Мы работаем по всей Москве и Подмосковью </h1>
-              <p class="title_sm_7">Кликните по изображению, чтобы <span>посмотреть актуальную карту обслydbdyb</span></p>
+
+    <section class="section container" data-aos="fade-up" data-aos-duration="1000">
+      <div>
+        <h1 class="title_3">Как решить проблему?</h1>
+        <h4 class="title_sm_3">Установите систему <span>усиления сигнала!</span></h4>
+        <img src="./assets/img/level.svg" alt="">
+
+        <div class="info_solve">
+          <div class="problem_info_wrap">
+            <div class="problem_info">
+              <h3>Внешняя антенна устанавливается на фасад или крышку здания, принимает сигнал от базовой станции и
+                передает на репитер посредством кабеля.</h3>
+            </div>
+            <div class="problem_info">
+              <h3>Репитер усиливает сигнал и направляет его на комнатную антенну, которая раздает улучшенный сигнал
+                внутри помещения.</h3>
+            </div>
           </div>
 
+          <div class="quote2">
+            <h4>*Связь становится лучше, гаджеты работают в комфортном режиме, их излучение заметно снижается. </h4>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section data-aos="fade-up">
+      <div class="full_container">
+        <div class="wrap_long">
+          <div class="right_info">
+            <div class="txt_right">
+              <h1 class="right_title">
+                А если возникнут сложности?
+              </h1>
+              <ul class="right_menu">
+                <li>Предоставим проектную документацию, поможем согласовать с управ </li>
+                <li>Установим и правильно настроим сертифицированное оборудование от российских производителей </li>
+                <li>Спрячем и замаскурием оборудование, сохраним неприкосновенным дизайн ваших интерьеров, целостность
+                  ремонта и порядок в помещении </li>
+                <li> </li>
+              </ul>
+              <div class="quote f__quote">
+                <p>**Все договоренности и условия пропишем в договоре и дадим гар</p>
+              </div>
+            </div>
+          </div>
+          <div class="phone_img2">
+            <img src="./assets/img/securty.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000">
+      <section class="section_4">
+        <h1 class="title_4">Узнайте стоимость работ и оборудования прямо сейчас </h1>
+        <h4 class="title_sm_4">Выберите нужные варианты и <span>получите предварительную смету</span></h4>
+        <form action="">
+          <div class="select_wrapper">
+            <div class="modalka">
+              <h1>Спасибо</h1>
+              <h3>Мы перезвоним вам</h3>
+              <p>в течении 2 минут</p>
+            </div>
+            <div class="select_self">
+              <h4> Тип объекта</h4>
+              <div class="select-pop">
+                <select class="select">
+                  <option value="value1">Офис</option>
+                  <option value="value2">Офис</option>
+                  <option value="value3">Офис</option>
+                </select>
+              </div>
+        </form>
+        </div>
+        <div class="select_self">
+          <h4> Площадь, м²</h4>
+          <div class="select-pop">
+            <select class="select">
+              <option value="value1">До 100м2</option>
+              <option value="value2">До 100м2</option>
+              <option value="value3">До 100м2</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="select_self">
+          <h4> Расстояние от МКАД</h4>
+
+          <div class="select-pop">
+            <select class="select">
+              <option value="value1">До 10 км</option>
+              <option value="value2">До 10 км</option>
+              <option value="value3">До 10 км</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="select_self">
+          <h4> Место установки антены</h4>
+          <div class="select-pop">
+            <select class="select">
+              <option value="value1">На фасад</option>
+              <option value="value2">На фасад</option>
+              <option value="value3">На фасад</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="select_self">
+          <h4> Что нужно усилить</h4>
+          <div class="select-pop">
+            <select class="select">
+              <option value="value1">Голосовую связь</option>
+              <option value="value2">Голосовую связь</option>
+              <option value="value3">Голосовую связь</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="select_self">
+          <h4>Выберите оператора</h4>
+          <div class="select-pop">
+            <select class="select">
+              <option value="value1">МТС</option>
+              <option value="value2">МТС</option>
+              <option value="value3">МТС</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="select_self">
+          <h4> Ваше имя</h4>
+          <div class="select-pop">
+            <input type="text" class="select" placeholder="Имя">
+          </div>
+        </div>
+        <div class="select_self">
+          <h4> Номер телефона</h4>
+          <div class="select-pop">
+            <input type="text" class="select" placeholder="Телефон">
+          </div>
+        </div>
+        <div class="select_self">
+          <div class="select-pop">
+            <input type="submit" id="cost" value="Рассчитать стоимость" class="select_btn button btn_black">
+          </div>
+        </div>
+        </div>
+        </form>
+      </section>
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000">
+      <div class="full_container">
+        <div class="container">
+          <h1 class="title_5">Вам удобно и выгодно сотрудничать с нами</h1>
+          <div class="our_features">
+            <div class="feature_item">
+              <div class="icon_item">
+                <img src="./assets/img/1.svg" alt="">
+              </div>
+              <div class="our_text_right">
+                <h3 class="main_tit_txt">
+                  1 Год
+                </h3>
+                <p class="main_last_tit">гарантия на работы и оборудование</p>
+              </div>
+            </div>
+            <div class="feature_item">
+              <div class="icon_item ">
+                <img src="./assets/img/3.svg" alt="">
+              </div>
+              <div class="our_text_right">
+                <h3 class="main_tit_txt">
+                  Постоплата
+                </h3>
+                <p class="main_last_tit">возможность оплаты
+                  после проверки</p>
+              </div>
+            </div>
+            <div class="feature_item">
+              <div class="icon_item sm_img">
+                <img src="./assets/img/5.svg" alt="">
+              </div>
+              <div class="our_text_right">
+                <h3 class="main_tit_txt">
+                  Качество
+                </h3>
+                <p class="main_last_tit">российский
+                  производителей</p>
+              </div>
+            </div>
+            <div class="feature_item">
+              <div class="icon_item">
+                <img src="./assets/img/4.svg" alt="">
+              </div>
+              <div class="our_text_right">
+                <h3 class="main_tit_txt">
+                  Рассрочка
+                </h3>
+                <p class="main_last_tit">без банков
+                  и без процентов</p>
+              </div>
+            </div>
+            <div class="feature_item">
+              <div class="icon_item">
+                <img src="./assets/img/2.svg" alt="">
+              </div>
+              <div class="our_text_right">
+                <h3 class="main_tit_txt">
+                  Вознаграждение
+                </h3>
+                <p class="main_last_tit">Партнерам
+                  за рекомендацию</p>
+              </div>
+            </div>
+            <div class="feature_item">
+              <div class="quote f__quote">
+                *
+                Вы получите качественное
+                оборудование от российских
+                производителей, в котором
+                можете быть уверены на все 100%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="title_6">
+        Как мы решаем задачи клиентов
+      </h1>
+      <h5 class="title_sm_6">Выбирайте, примеры каких <span>объектов вам хочется посмотреть</span></h5>
+      <div class="tab_group">
+        <h4 class="tab tab-link act" data-tab="1">
+          Все объекты
+        </h4>
+        <h4 class="tab tab-link" data-tab="2">
+          Коммерческие объекты
+        </h4>
+        <h4 class="tab tab-link" data-tab="3">
+          Жилые объекты
+        </h4>
+      </div>
+
+      <div class="slide_tab" >
+
+        <div class="slide-1 tab-content activec" id="tab-1">
+           
+          <div class="slide_inside">
+            
+          <div class="left_slide">
+            <img class="top_img" src="./assets/img/slider.png" alt="">
+            <ul class="slide_item_img">
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+            </ul>
+          </div>
+
+          <div class="right_part">
+
+            <ul class="right_list">
+              <li><img src="./assets/img/bob.png" alt=""> Щелково</li>
+              <li><img src="./assets/img/bob1.png" alt=""> 300 м2</li>
+              <li><img src="./assets/img/bob2.png" alt=""> 1 день</li>
+            </ul>
         
+        
+            <div class="text_some_slider">
+              <h3>Задачи:</h3>
+              <p>Внутри дома связь работала только возле окон. Отсуствовала возможность прокладки кабеля между
+                этажами в доме.</p>
+            </div>
+        
+            <div class="text_some_slider">
+              <h3>Решение</h3>
+              <p>По фасаду был проведен кабель в коробке цвета дома. Внутренни антенны окрашены в цвет интерьера.
+                Установив усилитель мощность 320 мВт, удалось покрыть сигналом всю площадь дома .</p>
+            </div>
+        
+          </div>
+          </div>
 
-         
-         
 
+        </div>
+        <div class="slide-2  tab-content " id="tab-2">
+          <div class="slide_inside">
+            
+            <div class="left_slide">
+              <img class="top_img" src="./assets/img/slider.png" alt="">
+              <ul class="slide_item_img">
+                <li><img src="./assets/img/slider.png" alt=""></li>
+                <li><img src="./assets/img/slider.png" alt=""></li>
+                <li><img src="./assets/img/slider.png" alt=""></li>
+                <li><img src="./assets/img/slider.png" alt=""></li>
+                <li><img src="./assets/img/slider.png" alt=""></li>
+              </ul>
+            </div>
+  
+            <div class="right_part">
+  
+              <ul class="right_list">
+                <li><img src="./assets/img/bob.png" alt=""> Щелково</li>
+                <li><img src="./assets/img/bob1.png" alt=""> 300 м2</li>
+                <li><img src="./assets/img/bob2.png" alt=""> 1 день</li>
+              </ul>
           
-    
+          
+              <div class="text_some_slider">
+                <h3>Задачи:</h3>
+                <p>Внутри дома связь работала только возле окон. Отсуствовала возможность прокладки кабеля между
+                  этажами в доме.</p>
+              </div>
+          
+              <div class="text_some_slider">
+                <h3>Решение</h3>
+                <p>По фасаду был проведен кабель в коробке цвета дома. Внутренни антенны окрашены в цвет интерьера.
+                  Установив усилитель мощность 320 мВт, удалось покрыть сигналом всю площадь дома .</p>
+              </div>
+          
+            </div>
+            </div>
+        </div>
+        <div class="slide-3  tab-content " id="tab-3">
+           <div class="slide_inside">
+            
+          <div class="left_slide">
+            <img class="top_img" src="./assets/img/slider.png" alt="">
+            <ul class="slide_item_img">
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+              <li><img src="./assets/img/slider.png" alt=""></li>
+            </ul>
+          </div>
+
+          <div class="right_part">
+
+            <ul class="right_list">
+              <li><img src="./assets/img/bob.png" alt=""> Щелково</li>
+              <li><img src="./assets/img/bob1.png" alt=""> 300 м2</li>
+              <li><img src="./assets/img/bob2.png" alt=""> 1 день</li>
+            </ul>
+        
+        
+            <div class="text_some_slider">
+              <h3>Задачи:</h3>
+              <p>Внутри дома связь работала только возле окон. Отсуствовала возможность прокладки кабеля между
+                этажами в доме.</p>
+            </div>
+        
+            <div class="text_some_slider">
+              <h3>Решение</h3>
+              <p>По фасаду был проведен кабель в коробке цвета дома. Внутренни антенны окрашены в цвет интерьера.
+                Установив усилитель мощность 320 мВт, удалось покрыть сигналом всю площадь дома .</p>
+            </div>
+        
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      
+        <h3 class="center_list">Смотреть все объекты <span class="symbol"> &#187;</span></h3>
+      </div>
+     
+
+      
+    </div>
+    <div class="full_container" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="title_7">Мы работаем по всей Москве <br> и Подмосковью </h1>
+      <p class="title_sm_7">Кликните по изображению, чтобы <span>посмотреть актуальную карту обслydbdyb</span></p>
+      <div class="grid__items">
+        <div class="item">
+          <img src="assets/img/home1.png" alt="">
+          <p>Дома 600 объектов </p>
+        </div>
+        <div class="item">
+          <img src="assets/img/home2.png" alt="">
+          <p>Офис 35 объектов</p>
+        </div>
+        <div class="item">
+          <img src="assets/img/home3.png" alt="">
+          <p>Подвальное помещение 55 объектов </p>
+        </div>
+        <div class="item">
+          <img src="assets/img/home4.png" alt="">
+          <p>Бизнес центр 35 объектов </p>
+        </div>
+        <div class="item">
+          <img src="assets/img/home5.png" alt="">
+          <p>Магазин 25 объектов </p>
+        </div>
+        <div class="item">
+          <img src="assets/img/home6.png" alt="">
+          <p>Парковка 20 объектов </p>
+        </div>
+      </div>
+      <div class="standart-w-container map">
+        <div class="map-google-wrap">
+          <iframe class="google-map" src="https://www.google.com/maps/d/embed?mid=1VKykkDNxJS2yCaUnrtqahGBtgT7hV-h1"
+            width="100%" height="640"></iframe>
+        </div>
+      </div>
+      <p class="map__bottom">Вероятно, мы уже работали в вашем районе и знаем все его осебенности.</p>
+    </div>
+    <div class="our__premium" data-aos="fade-up" data-aos-duration="1000">
+      <div class="title__premium">
+        <h1>Наши премиутшества</h1>
+      </div>
+      <div class="body__premium">
+        <div class="item">
+          <b class="fs-20">Вот несколько пречин почему клиенты выбрают вас </b>
+          <div class="itemch">
+            <img src="assets/img/Без названия.png" alt="">
+            <p><b>Работаем на результат. </b> Обеспечиваем стабильный прием сети по всему офису, независимо от сложности
+              объекта. На предоставленные услуги и оборудование даем гарантию от 1 года до 3 лет.</p>
+          </div>
+          <div class="itemch">
+            <img src="assets/img/Без названия.png" alt="">
+            <p><b>Знаем свое дело.</b>В нашей команде квалифицированные инженеры и монтажники с большим опытом работы в
+              сфере телекоммуникаций.</p>
+          </div>
+          <div class="itemch">
+            <img src="assets/img/Без названия.png" alt="">
+            <p><b>Гарантируем законность</b>Устройства для усиления сигнала сотовой связи в офисе легальны и
+              сертифицированы. Вам не грозят проверки и жалобы со стороны Роскомнадзора, Минкомсвязи или других
+              инстанций. Используем оборудование крупнейших брендов — Vegatel, Picocell, Baltic Signa.</p>
+          </div>
+          <div class="itemch">
+            <img src="assets/img/Без названия.png" alt="">
+            <p><b>Устанавливаем аккуратно. </b> Элементы монтажа не нарушают целостность интерьера офиса и наружного
+              фасада здания. Кабели и провода надежно скрываем под плинтусами, в коробах, стенах или за потолком. Сам
+              репитер-усилитель выглядит компактно и стильно.</p>
+          </div>
+          <div class="itemch">
+            <img src="assets/img/Без названия.png" alt="">
+            <p><b>
+                Предлагаем вам сэкономить</b> Для каждого случая индивидуально подбираем необходимое оборудование.
+              Комплекс услуг и оборудование для монтажа можно приобрести в рассрочку.</p>
+          </div>
+          <div class="itemch">
+            <p>Выполним поставленные задачи в сжатые сроки. Итоговая цена зависит от выбора комплектации, объема и
+              сложности работ.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/rasm.png" alt="">
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__premium">
+          <p>
+            Оформить заявку или проконсультироваться с менеджером по вопросам подбору и установке оборудования вы можете
+            по телефону <b> +7 (495) 085-37-71 </b> или написав на почту <b>info@gsm-link.ru</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="our__comment" id="comments" data-aos="fade-up" data-aos-duration="1000">
+      <div class="title__comment">
+        <h1>Отзывы
+        </h1>
+        <p>Вся правда <span>о нашей работе</span></p>
+      </div>
+      <div class="body__comment">
+        <div class="top_bar">
+          <a href="#">Gsm-link</a>
+          <a href="#">Yandex Map</a>
+        </div>
+        <div class="middle_bar">
+          <div class="item">
+            <div class="trom border custom__border">
+              <div class="fl-trom">
+                <h1>4.9</h1>
+                <div>
+                  <div class="flex">
+                    <img class="star" src="assets/img/star-icon.jpg" alt="">
+                    <img class="star" src="assets/img/star-icon.jpg" alt="">
+                    <img class="star" src="assets/img/star-icon.jpg" alt="">
+                    <img class="star" src="assets/img/star-icon.jpg" alt="">
+                    <img class="star" src="assets/img/star-icon.jpg" alt="">
+                  </div>
+                  <p>19 отзывов . 26 оценок</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="comment__trom">
+              <div class="trom">
+                <div class="fl-trom">
+                  <img id="avatar" src="assets/img/user.png" class="img" alt="">
+                  <div>
+                    <div class="flex">
+                      <b>Maksim Gorkin</b>
+                    </div>
+                    <p>28 iyun 2020</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="trom">
+                <div class="fl-trom">
+                  <div>
+                    <div class="flex">
+                      <img class="star" src="assets/img/star-icon.jpg" alt="">
+                      <img class="star" src="assets/img/star-icon.jpg" alt="">
+                      <img class="star" src="assets/img/star-icon.jpg" alt="">
+                      <img class="star" src="assets/img/star-icon.jpg" alt="">
+                      <img class="star" src="assets/img/star-icon.jpg" alt="">
+
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nostrum doloribus labore,
+                      laudantium dolor unde, natus cumque autem quasi numquam adipisci ratione! Labore, aut aliquid
+                      omnis autem voluptatibus cum totam praesentium, harum minima sequi quos, hic dolorem delectus unde
+                      possimus odit accusantium ex. A dolorem voluptates reiciendis! Unde, reiciendis sit?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="trom border custom__border">
+
+              <div class="fl-trom">
+                <h1>4.9</h1>
+                <div>
+                  <div class="flex">
+                    <img src="assets/img/star-icon.jpg" alt="">
+                    <img src="assets/img/star-icon.jpg" alt="">
+                    <img src="assets/img/star-icon.jpg" alt="">
+                    <img src="assets/img/star-icon.jpg" alt="">
+                    <img src="assets/img/star-icon.jpg" alt="">
+                  </div>
+                  <p>19 отзывов . 26 оценок</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="comment__trom">
+              <div class="trom">
+                <div class="fl-trom">
+                  <img id="avatar" src="assets/img/user.png" class="img" alt="">
+                  <div>
+                    <div class="flex">
+                      <b>Maksim Gorkin</b>
+                    </div>
+                    <p>28 iyun 2020</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="trom">
+                <div class="fl-trom">
+                  <div>
+                    <div class="flex">
+                      <img src="assets/img/star-icon.jpg" alt="">
+                      <img src="assets/img/star-icon.jpg" alt="">
+                      <img src="assets/img/star-icon.jpg" alt="">
+                      <img src="assets/img/star-icon.jpg" alt="">
+                      <img src="assets/img/star-icon.jpg" alt="">
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nostrum doloribus labore,
+                      laudantium dolor unde, natus cumque autem quasi numquam adipisci ratione! Labore, aut aliquid
+                      omnis autem voluptatibus cum totam praesentium, harum minima sequi quos, hic dolorem delectus unde
+                      possimus odit accusantium ex. A dolorem voluptates reiciendis! Unde, reiciendis sit?
+                    </p>
+                  </div>
+                </div>
+                <span class="lime__txt">Больше отзывов на Яндекс.картах >></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn button btn_nav lime">Заказать звонок</a>
     </div>
 
+    <div class="company__work" data-aos="fade-up" data-aos-duration="1000">
+      <div class="title__company">
+        <h1>Компании, с которыми мы работали
+        </h1>
+      </div>
+      <div class="body__company">
+        <div class="flex_my">
+          <div class="item">
+            <img src="assets/img/doc.png" alt="">
+            <div class="abs icon1">
 
-    <script>
-        var selector, elems, makeActive;
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/doc2.png" alt="">
+            <div class="abs icon2">
 
-        selector = '.tab_group .tab';
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/doc3.png" alt="">
+            <div class="abs icon3">
 
-        elems = document.querySelectorAll(selector);
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/doc4.png" alt="">
+            <div class="abs icon4">
 
-        makeActive = function () {
-            for (var i = 0; i < elems.length; i++)
-                elems[i].classList.remove('act');
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price" data-aos="fade-up" data-aos-duration="1000">
+      <div class="price__title">
+        <h1>Пройдите тест и получите скидку 10%</h1>
+        <p>на <span>монтажные работы</span></p>
+      </div>
+      <div class="price__body container">
+        <div class="flex spb as col__470">
+          <h1 style="opacity: 0;">Г</h1>
+          <div class="lime flex spb as">
+            <span>Ваша скидка </span>
+            <h1 class="percent">2%</h1>
+          </div>
+        </div>
+        <div class="flex spb as bb__lime fl-column" style="display: none;">
+          <div class="item">
+            <img src="assets/img/ofic-1.png" alt="">
+            <p>Офис</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/offic-2.png" alt="">
+            <p>Загородный дом</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/ofic-3.png" alt="">
+            <p>Дача</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/ofic-4.png" alt="">
+            <p>Квартира</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/ofic-5.png" alt="">
+            <p>Склад</p>
+          </div>
+          <div class="item">
+            <img src="assets/img/ofic-6.png" alt="">
+            <p>Другое</p>
+          </div>
+        </div>
+        <div class="quize">
 
-            this.classList.add('act');
-        };
+          <div class="question-bar">
+            <h2 class="qestion">1) Which type of JavaScript language is ___</h2>
+            <ul>
+              <li>
+                <input type="radio" name="option" id="a" class="ansList">
+                <label for="a" class="ansa">Object-Oriented</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="b" class="ansList">
+                <label for="b" class="ansb">Object-Based</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="c" class="ansList">
+                <label for="c" class="ansc">Assembly-language</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="d" class="ansList">
+                <label for="d" class="ansd">Assembly-language</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="e" class="ansList">
+                <label for="e" class="anse">High-level</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="f" class="ansList">
+                <label for="f" class="ansf">High-level</label>
+              </li>
+            </ul>
 
-        for (var i = 0; i < elems.length; i++)
-            elems[i].addEventListener('mousedown', makeActive);
-    </script>
+          </div>
+          <div id="showscore" class="scoreArea"></div>
+        </div>
+      </div>
+      <div class="price__footer flex spb container">
+        <div class="loader">
+          <div class="flex column as">
+            <b id="schot">0%</b>
+            <div class="load__body">
+              <div class="load"></div>
+            </div>
+          </div>
+        </div>
+        <input id="submit" value=" Далее" class="select_btn btn_black button submitBtn ">
+      </div>
+    </div>
+    <div class="wrapper">
+      <section class="cervice" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="cervice__title">3 шага к идеальной связи
+          у вас в офисе или дома</h1>
+        <div class="cervice__block">
+          <div class="cervice__box">
+            <img src="./assets/img/Layer 32.png" alt="">
+            <h3>Заявка</h3>
+            <p>Ответим на все вопросы, выберем оптимальное техническое решение, составим несколько вариантов
+              сметы
+              и согласуем время монтажа.</p>
+            <h1>1</h1>
+          </div>
+          <div class="cervice__box">
+            <img src="./assets/img/Layer 33.png" alt="">
+            <h3> Замер и монтаж</h3>
+            <p>На небольших объектах все делаем в один день. Работаем в ночное и вечернее время. Сроки и условия
+              прописываем в договоре.</p>
+            <h1>2</h1>
+          </div>
+          <div class="cervice__box">
+            <img src="./assets/img/Layer 34.png" alt="">
+            <h3>Тестирование и оплата</h3>
+            <p>Настраиваем систему, проверяем связь и скорость интернета. Вы оплачиваете нашу работу удобным
+              для вас способом.</p>
+            <h1>3</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="tender" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="tender__title">Участвуем в тендерах
+          и госзакупках</h1>
+        <div class="tender__block">
+          <div class="tender__img"><img src="./assets/img/fb22c431196e29d57a8fec4fa6d27167.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/Layer 15.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/Layer 16.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/Layer 17.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/Layer 18.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/gazneftetorg.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/Layer 20.png" alt=""></div>
+          <div class="tender__img"><img src="./assets/img/637_photo.png" alt=""></div>
+        </div>
+      </section>
+
+      <section class="vozmojnost" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+          <div class="vozmojnost__text">
+            <h1 class="vozmojnost__title">Что делать, если
+              тянуть провода
+              нет возможности?
+            </h1>
+            <p class="vozmojnost__descr">Выбирайте <span class="green">беспроводную систему</span></p>
+            <ul>
+              <li>Простая установка без прокладки кабельных трасс</li>
+              <li>Автоматическая настройка и постоянная подстройка
+                в зависимости от активности пользователей
+                и мощности сигнала</li>
+              <li> Идеальное качество связи, надежность
+                и безопасность</li>
+            </ul>
+            <button class="vozmojnost__btn showmodal">Выбрать беспроводной усилитель</button>
+          </div>
+          <div class="vozmojnost__img"><img src="./assets/img/monitor.png" alt=""></div>
+        </div>
+
+      </section>
+
+      <section class="vozmojnost2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="vozmojnost2__img">
+          <img src="./assets/img/scet.png" alt="">
+        </div>
+        <div class="vozmojnost2__text">
+          <h1 class="vozmojnost2__title">А можно подобрать
+            оборудование
+            самостоятельно?
+            <span> Можно!</span>
+          </h1>
+          <p class="vozmojnost2__descr">Выбирайте <span class="green">готовые комплекты</span>
+          </p>
+          <p class="vozmojnost2__descrp">Соберите систему усиления сигнала под себя,
+            или обратитесь к нам за помощью и консультацией
+          </p>
+          <button class="vozmojnost2__btn showmodal">Выбрать комплект самостоятельно</button>
+        </div>
+      </section>
+
+      <section class="polezn" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+          <h1 class="polezn__title">Чем еще мы будем вам полезны</h1>
+          <div class="polezn__block">
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/12.svg" alt="">
+              </div>
+
+              <h3>Установим Системы контроля управления доступом (СКУД)</h3>
+              <p>Доступ на объект по картам или биометрии, установка турникетов,
+                учет рабочего времени сотрудников</p>
+            </div>
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/9.svg" alt="">
+              </div>
+              <h3>Установим сети Wi-Fi
+                на любом объекте</h3>
+              <p>Установим беспроводные сети WiFi. Поможем с подбором оператора для максимальной скорости
+                интернета.</p>
+            </div>
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/11.svg" alt="" id="im3">
+              </div>
+              <h3>Модернизируем
+                установленные системы</h3>
+              <p>Расширим существующие системы. Заменим устаревшее оборудование
+                на более современное</p>
+            </div>
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/10.svg" alt="" id="im3">
+              </div>
+              <h3>Диагностируем и устраним проблемы установленных
+                систем</h3>
+              <p>Выявляем и устраняем проблемы
+                в работе установленных систем. Исправляем некачественную работу других монтажников</p>
+            </div>
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/иконки-gsm.png" alt="">
+              </div>
+              <h3>Спроектируем и установим систему видеонаблюдения</h3>
+              <p>От 4 до 250+ камер с высочайшим качеством изображения</p>
+            </div>
+            <div class="polezn__box">
+              <div class="polezn__img">
+                <img src="./assets/img/14.svg" alt="" id="im1">
+              </div>
+              <h3>Установим систему домофонии</h3>
+              <p>Монтаж аналоговых и IP домофонов
+                с удаленных доступом на телефон</p>
+            </div>
+          </div>
+          <button class="polezn__btn showmodal">Заказать звонок</button>
+        </div>
+        <img src="./assets/img/done.png" alt="" id="done">
+      </section>
+
+      <section class="voprosi" data-aos="fade-up" data-aos-duration="1000">
+
+        <h1 class="voprosi__title">Вопросы, которые у вас
+          могли возникнуть
+        </h1>
+        <p class="voprosi__descr">Читайте полезные статьи <span> в нашем блоге!</span></p>
+        <div class="voprosi__block">
+          <div class="voprosi__box">
+            <img src="./assets/img/bro.png" alt="">
+            <div class="voprosi_text">
+              <h3>Как влияют усилители
+                сотовой связи на организм человека?</h3>
+              <p>Правильно настроенный усилитель не только улучшает качество связи, но и СНИЖАЕТ излучение от
+                телефона в 10-20 раз и существенно уменьшает его негативное влияние.</p>
+            </div>
+          </div>
+          <div class="voprosi__box">
+            <img src="./assets/img/bro2.png" alt="">
+            <div class="voprosi_text">
+              <h3>Чем плохи китайские репитеры?</h3>
+              <p>Чаще всего они не улучшают качество сигнала, а ухудшают его. С ними часто возникают технические
+                проблемы, а иногда — проблемы с законом. И продавец ни за что не отвечает.</p>
+            </div>
+          </div>
+          <div class="voprosi__box">
+            <img src="./assets/img/bro3.png" alt="">
+            <div class="voprosi_text">
+              <h3> Как замерить уровень сигнала?</h3>
+              <p>Чтобы замерить уровень сигнала на iPhone
+                и Android, нужно воспользоваться инженерным меню устройства или скачать специальную программу.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4 class="voprosi__click">Читать все статьи <img style="width: 20px;" src="./assets/img/2055619.png" alt="">
+        </h4>
+      </section>
+
+      <section class="map" id="contact" data-aos="fade-up" data-aos-duration="1000">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.8907172772765!2d37.85511541593086!3d55.760400580555384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acbaad1e29a53%3A0x6237eeb706ff9eeb!2z0YPQuy4g0J_QvtCx0LXQtNGLLCA5LCA0INGN0YLQsNC2LCDQvtGE0LjRgSA0MjEsINCg0LXRg9GC0L7Qsiwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDM5NjY!5e0!3m2!1sru!2s!4v1634278062270!5m2!1sru!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map__block">
+
+          <h2>Расскажите нам о своих задачах!</h2>
+          <h3>Перезвоним вам в течении 2 минут</h3>
+          <form class="map__form" action="">
+            <input type="text" name="" id="" placeholder="Ваше имя">
+            <input type="number" name="" id="" placeholder="Ваш телефон">
+            <button class="map__btn showmodal">Заказать звонок</button>
+          </form>
+          <h3 id="maph">Напишите в любой мессенджер</h3>
+          <div class="map__icon">
+            <a href="#">
+              <i class="fab fa-whatsapp"></i></a>
+            <a href="#">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </div>
+
+          <h2 id="maph2">+7 (495) 085-37-81</h2>
+          <p>info@gsm-link.ru</p>
+
+        </div>
+        <div class="map__target">
+          <img src="./assets/img/metka.png" alt="">
+          <div class="target__text">
+            <h3>Приезжайте к нам
+              на консультацию
+            </h3>
+            <p>г. Реутов ул. Победы д.9, 4 этаж, офис 421
+              ежедневно с 9:00 до 21:00
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer__logo">
+          <img src="./assets/img/logo.png" alt="">
+          <div class="footer__icon">
+            <a href="#"> <img
+                src="./assets/img/5161958_instagram-logo-png-transparent-background-gray-instagram-logo.png" alt=""></a>
+            <a href="#"> <img src="./assets/img/download (2).png" alt=""></a>
+            <a href="#"> <img src="./assets/img/440-4404634_youtube-play-button-black-white-youtube-logo-small.png"
+                alt=""></a>
+          </div>
+          <p>© 2016-2021 gsm-link.ru – все права защищены</p>
+          <p class="green">
+            Политика конфиденциальности</p>
+        </div>
+        <div class="footer__block">
+          <div class="footer__box">
+            <h3> Заказать услугу</h3>
+            <a href="">Усиление связи в офисе</a>
+            <a href="">Усиление связи в загородном доме</a>
+            <a href="">Усиление сигнала в квартире</a>
+            <a href="">Усиление связи и интернета на даче</a>
+            <a href="">Усиление связи в подвале</a>
+            <a href="">Усиление связи в авто</a>
+            <a href="">Усиление сигнала 2G</a>
+            <a href="">Усиление сигнала 3G</a>
+            <a href="">Усиление сигнала 4G LTE</a>
+          </div>
+          <div class="footer__box">
+            <h3>Обородование и цены</h3>
+            <a href="">Готовые комплекты</a>
+            <a href="">Репитеры</a>
+            <a href="">Бустеры</a>
+            <a href="">Антенны</a>
+            <a href="">Делители сигнала</a>
+            <a href="">Кабель</a>
+            <a href="">Разъемы и переходники</a>
+            <a href="">Дополнительно</a>
+          </div>
+          <div class="footer__box">
+            <h3> Онас</h3>
+            <a href="">Наши проекты</a>
+            <a href="">Полезные статьи</a>
+            <a href="">Правдивые отзывы</a>
+            <a href="">Сертификаты производителей</a>
+            <a href="">Наши контакты</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
 
 
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
- <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          
-        },
-       
-      });
-    </script>
-    
+  <div id="mySizeChartModal" class="ebcf_modal">
+    <form id="order" class="ebcf_modal-content">
+      <span class="ebcf_close">&#x2715;</span>
+      <h1>Перезвоним</h1>
+      <p class="cen">в течении 2 минут!</p>
+      <div class="map__form boxx">
+        <input type="text" name="" placeholder="Ваше имя">
+        <input type="text" name="" placeholder="Ваш телефон" required>
+        <input type="submit" name="" class="polezn__btn" value="Заказать звонок">
+      </div>
+      <p>Нажимая кнопку "Заказать звонок" <br> вы соглашаетесь с <span class="green"> политикой
+          конфиденциальностью</span></p>
+    </form>
+  </div>
+
+
+  <div id="mySizeChartModal2" class="ebcf_modal2">
+    <form id="order" class="ebcf_modal-content2">
+      <span class="ebcf_close2">&#x2715;</span>
+      <h1>Перезвоним</h1>
+      <p class="cen">в течении 2 минут!</p>
+      <div class="map__form boxx">
+        <input type="text" name="" placeholder="Ваше имя">
+        <input type="text" name="" placeholder="Ваш телефон" required>
+        <input type="submit" name="" class="polezn__btn" value="Заказать звонок">
+      </div>
+      <p>Нажимая кнопку "Заказать звонок" <br> вы соглашаетесь с <span class="green"> политикой
+          конфиденциальностью</span></p>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <a href="#" class="scrollup" id="scroll-up">
+    <img width="40" src="./assets/img/arrow+top+arrow+up+border+stroke+arrow+stroke+arrow+right-1320185743615020555.png"
+      alt="">
+  </a>
+  <script src="./assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/swip.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
+
+
 </html>

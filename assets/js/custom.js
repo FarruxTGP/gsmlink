@@ -1,0 +1,54 @@
+          // Get the modal
+          var ebModal = document.getElementById('mySizeChartModal');
+
+          // Get the button that opens the modal
+          var ebBtn = document.getElementById("mySizeChart");
+          
+          // Get the <span> element that closes the modal
+          var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+          
+          // When the user clicks the button, open the modal 
+          ebBtn.onclick = function() {
+              ebModal.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          ebSpan.onclick = function() {
+              ebModal.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == ebModal) {
+                  ebModal.style.display = "none";
+              }
+          }
+          
+
+
+                    // Get the modal
+                    var ebModal2 = document.getElementById('mySizeChartModal2');
+
+                    // Get the button that opens the modal
+                    var ebBtn2 = document.getElementById("mySizeChart2");
+                    
+                    // Get the <span> element that closes the modal
+                    var ebSpan = document.getElementsByClassName("ebcf_close2")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    ebBtn2.onclick = function() {
+                        ebModal2.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    ebSpan.onclick = function() {
+                        ebModal2.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == ebModal2) {
+                            ebModal2.style.display = "none";
+                        }
+                    }
+                    
